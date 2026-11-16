@@ -3,13 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ระบบส่งแผนการสอนออนไลน์ โรงเรียนวัดสีสุก</title>
+  <title>ระบบส่งแผนการสอนออนไลน์ | โรงเรียนวัดสีสุก</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Leelawadee UI", Tahoma, sans-serif;
+      color: #123154;
+      background: linear-gradient(145deg, #e2f2ff, #fff1df);
+    }
+
+    main {
+      width: min(100%, 680px);
+      padding: clamp(28px, 6vw, 56px);
+      text-align: center;
+      background: #fff;
+      border: 1px solid #c6ddf1;
+      border-top: 5px solid #e9af59;
+      border-radius: 24px;
+      box-shadow: 0 16px 36px #1231541a;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.6rem, 5vw, 2.5rem);
+      line-height: 1.4;
+    }
+
+    .school {
+      margin: 0 0 6px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .district {
+      margin: 0 0 26px;
+      color: #405c77;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 12px;
+      background: #155692;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #0e4173; }
+    .button:focus-visible { outline: 3px solid #d78d22; outline-offset: 4px; }
+  </style>
 </head>
 <body>
-  <h1>ระบบส่งแผนการสอนออนไลน์</h1>
-  <p>โรงเรียนวัดสีสุก</p>
-  <p>
-    <a href="https://script.google.com/macros/s/AKfycbx7IbTsyVXS1CAm7LEDHPaps5lE2AzX5ye5UJ5tzcfyn_igQFghhK3f3UpLtCAImUoL/exec">เข้าสู่ระบบส่งแผนการสอน</a>
-  </p>
+  <main>
+    <h1>ระบบส่งแผนการสอนออนไลน์</h1>
+    <p class="school">โรงเรียนวัดสีสุก</p>
+    <p class="district">สำนักงานเขตจอมทอง กรุงเทพมหานคร</p>
+    <a class="button" href="https://script.google.com/macros/s/AKfycbx7IbTsyVXS1CAm7LEDHPaps5lE2AzX5ye5UJ5tzcfyn_igQFghhK3f3UpLtCAImUoL/exec">
+      เข้าสู่ระบบส่งแผนการสอน
+    </a>
+  </main>
 </body>
 </html>
