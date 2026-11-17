@@ -1,11 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ระบบส่งแผนการสอนออนไลน์ | โรงเรียนวัดสีสุก</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -42,33 +46,70 @@
     }
 
     .district {
-      margin: 0 0 26px;
+      margin: 0 0 30px;
       color: #405c77;
     }
 
+    /* ปุ่มส่งแผนการสอน */
     .button {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 12px;
-  background: #87CEEB;
-  color: #00334d;
-  font-weight: bold;
-  line-height: 1.5;
-  text-decoration: none;
-}
+      display: inline-block;
+      padding: 18px 35px;
+      min-width: 260px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #3188e8, #003399);
+      border: 2px solid #f5b82e;
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-decoration: none;
+      text-align: center;
+      box-shadow: 0 5px 0 #dca52b;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
 
-    .button:hover { background: #3498DB; }
-    .button:focus-visible { outline: 3px solid #d78d22; outline-offset: 4px; }
+    /* เมื่อเลื่อนเมาส์ไปวางบนปุ่ม */
+    .button:hover {
+      background: linear-gradient(135deg, #52a5ff, #1556c0);
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #dca52b;
+    }
+
+    /* เมื่อใช้แป้นพิมพ์เลือกปุ่ม */
+    .button:focus-visible {
+      outline: 3px solid #d78d22;
+      outline-offset: 4px;
+    }
+
+    /* ปรับขนาดปุ่มสำหรับโทรศัพท์ */
+    @media (max-width: 480px) {
+      .button {
+        width: 100%;
+        min-width: 0;
+        padding: 16px 15px;
+      }
+    }
+
   </style>
 </head>
+
 <body>
   <main>
+
     <h1>ระบบส่งแผนการสอนออนไลน์</h1>
+
     <p class="school">โรงเรียนวัดสีสุก</p>
-    <p class="district">สำนักงานเขตจอมทอง กรุงเทพมหานคร</p>
-    <a class="button" href="https://script.google.com/macros/s/AKfycbx7IbTsyVXS1CAm7LEDHPaps5lE2AzX5ye5UJ5tzcfyn_igQFghhK3f3UpLtCAImUoL/exec">
-      เข้าสู่ระบบส่งแผนการสอน
+
+    <p class="district">
+      สำนักงานเขตจอมทอง กรุงเทพมหานคร
+    </p>
+
+    <a class="button"
+       href="https://script.google.com/macros/s/AKfycbx7IbTsyVXS1CAm7LEDHPaps5lE2AzX5ye5UJ5tzcfyn_igQFghhK3f3UpLtCAImUoL/exec">
+      ส่งแผนการสอน
     </a>
+
   </main>
 </body>
 </html>
