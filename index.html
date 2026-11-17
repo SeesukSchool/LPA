@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>ระบบส่งแผนการสอนออนไลน์ | โรงเรียนวัดสีสุก</title>
 
   <style>
@@ -11,6 +12,7 @@
       box-sizing: border-box;
     }
 
+    /* พื้นหลังเว็บไซต์สีฟ้าอ่อน */
     body {
       margin: 0;
       min-height: 100vh;
@@ -19,44 +21,54 @@
       padding: 24px;
       font-family: "Leelawadee UI", Tahoma, sans-serif;
       color: #123154;
-      background: linear-gradient(145deg, #e2f2ff, #fff1df);
+      background: linear-gradient(145deg, #e3f4ff, #cce8fa);
     }
 
+    /* กรอบเนื้อหาหลัก */
     main {
       width: min(100%, 680px);
       padding: clamp(28px, 6vw, 56px);
       text-align: center;
-      background: #fff;
+      background: #ffffff;
       border: 1px solid #c6ddf1;
       border-top: 5px solid #e9af59;
       border-radius: 24px;
       box-shadow: 0 16px 36px #1231541a;
     }
 
+    /* หัวข้อเว็บไซต์ */
     h1 {
       margin: 0 0 12px;
       font-size: clamp(1.6rem, 5vw, 2.5rem);
       line-height: 1.4;
     }
 
+    /* ชื่อโรงเรียน */
     .school {
       margin: 0 0 6px;
       font-size: 1.3rem;
       font-weight: bold;
     }
 
+    /* ชื่อสำนักงานเขต */
     .district {
       margin: 0 0 30px;
       color: #405c77;
     }
 
-    /* ปุ่มส่งแผนการสอน */
+    /* ปุ่มเข้าสู่ระบบ สีน้ำเงินขอบทอง */
     .button {
       display: inline-block;
       padding: 18px 35px;
       min-width: 260px;
       border-radius: 20px;
-      background: linear-gradient(135deg, #3188e8, #003399);
+
+      background: linear-gradient(
+        135deg,
+        #3188e8,
+        #003399
+      );
+
       border: 2px solid #f5b82e;
       color: #ffffff;
       font-size: 17px;
@@ -64,30 +76,42 @@
       line-height: 1.5;
       text-decoration: none;
       text-align: center;
-      box-shadow: 0 5px 0 #dca52b;
+
+      /* เงาสีทองด้านล่าง */
+      box-shadow: 0 6px 0 #dca52b;
+
       transition: all 0.3s ease;
       cursor: pointer;
     }
 
     /* เมื่อเลื่อนเมาส์ไปวางบนปุ่ม */
     .button:hover {
-      background: linear-gradient(135deg, #52a5ff, #1556c0);
+      background: linear-gradient(
+        135deg,
+        #52a5ff,
+        #1556c0
+      );
+
       transform: translateY(-2px);
-      box-shadow: 0 7px 0 #dca52b;
+      box-shadow: 0 8px 0 #dca52b;
     }
 
-    /* เมื่อใช้แป้นพิมพ์เลือกปุ่ม */
+    /* เมื่อเลือกปุ่มด้วยแป้นพิมพ์ */
     .button:focus-visible {
       outline: 3px solid #d78d22;
       outline-offset: 4px;
     }
 
-    /* ปรับขนาดปุ่มสำหรับโทรศัพท์ */
+    /* รองรับโทรศัพท์มือถือ */
     @media (max-width: 480px) {
+      main {
+        padding: 30px 20px;
+      }
+
       .button {
         width: 100%;
         min-width: 0;
-        padding: 16px 15px;
+        padding: 16px 12px;
       }
     }
 
@@ -95,21 +119,28 @@
 </head>
 
 <body>
+
   <main>
 
     <h1>ระบบส่งแผนการสอนออนไลน์</h1>
 
-    <p class="school">โรงเรียนวัดสีสุก</p>
+    <p class="school">
+      โรงเรียนวัดสีสุก
+    </p>
 
     <p class="district">
       สำนักงานเขตจอมทอง กรุงเทพมหานคร
     </p>
 
+    <!-- ปุ่มเข้าสู่ระบบ -->
     <a class="button"
        href="https://script.google.com/macros/s/AKfycbx7IbTsyVXS1CAm7LEDHPaps5lE2AzX5ye5UJ5tzcfyn_igQFghhK3f3UpLtCAImUoL/exec">
-      ส่งแผนการสอน
+
+      เข้าสู่ระบบส่งแผนการสอน
+
     </a>
 
   </main>
+
 </body>
 </html>
